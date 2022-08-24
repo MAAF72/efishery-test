@@ -6,6 +6,7 @@ import (
 )
 
 type service interface {
+	UserService
 }
 
 // Instance service singleton

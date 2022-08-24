@@ -4,6 +4,7 @@ import "github.com/MAAF72/efishery-test/adapters"
 
 // Repositories repositories interface
 type Repositories interface {
+	UserRepository
 }
 
 type repositories struct {
