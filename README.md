@@ -56,3 +56,9 @@ docker compose up -d
 ## API Documentation
 The API are documented in Postman.
 [eFishery (getpostman.com)](https://documenter.getpostman.com/view/12345457/VUqsqw6P)
+
+## C4 Model (Context & Deployment/Container)
+The API are documented in Postman.
+![C4 - Context Diagram](images/c4-context-diagram.png)
+<br/>
+![C4 - Deployment/Container Diagram](images/c4-deployment-container-diagram.png)
