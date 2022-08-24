@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/MAAF72/efishery-test/adapters"
+	"github.com/MAAF72/efishery-test/middlewares"
 	"github.com/MAAF72/efishery-test/routers"
 	"github.com/MAAF72/efishery-test/services"
 	"github.com/gin-gonic/gin"
@@ -22,6 +23,8 @@ func main() {
 
 	adapters := adapters.Init()
 	services.Init(adapters)
+
+	middlewares.Init()
 
 	routers.RegisterRouters(app)
 
