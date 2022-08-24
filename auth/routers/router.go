@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"github.com/MAAF72/efishery-test/routers/auth"
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,8 +12,8 @@ const (
 
 // RegisterRouters routes all api
 func RegisterRouters(app *gin.Engine) {
-	app.Group(VERSION)
+	r := app.Group(VERSION)
 	{
-
+		auth.Routes(r)
 	}
 }
