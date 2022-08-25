@@ -66,3 +66,13 @@ The API are documented in Postman.
 
 ### Deployment/Container Level
 ![C4 - Deployment/Container Diagram](images/c4-deployment-container-diagram.png)
+
+## Video Demo Application
+You can watch demo app on youtube 
+[Demo eFishery Test](https://youtu.be/TZIy5REHLWc)
+
+## Deployed App
+All apps are deployed to Heroku.
+
+Auth : [http://efishery-test-auth.herokuapp.com](http://efishery-test-auth.herokuapp.com/)
+Fetch : [http://efishery-test-fetch.herokuapp.com](http://efishery-test-fetch.herokuapp.com/)
