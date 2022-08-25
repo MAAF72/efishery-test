@@ -42,10 +42,16 @@ def _get_summary_provinces(data):
                 }
                 
             if 'price' in item and item['price'] is not None:
-                provinces[province]['prices'].append(int(item['price']))
+                try:
+                    provinces[province]['prices'].append(int(item['price']))
+                except:
+                    pass
 
             if 'size' in item and item['size'] is not None:
-                provinces[province]['sizes'].append(int(item['size']))
+                try:
+                    provinces[province]['sizes'].append(int(item['size']))
+                except:
+                    pass
     
     res = dict()
 
@@ -87,7 +93,10 @@ def fetch():
         price_usd = None
 
         if 'price' in item and item['price'] is not None:
-            price_usd = str(round(int(item['price']) * to_usd_rates, 2))
+            try:
+                price_usd = str(round(int(item['price']) * to_usd_rates, 2))
+            except:
+                pass
 
         item.update({ 
             "price_usd": price_usd
